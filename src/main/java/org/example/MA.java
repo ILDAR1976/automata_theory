@@ -1,5 +1,5 @@
 package org.example;
-
+// Minimization of a finite automaton
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -194,7 +194,6 @@ public class MA {
         if (separateL.fst.size() != 0) R.add(separateL.fst);
         if (separateL.snd.size() != 0) R.add(separateL.snd);
     }
-
     public static void printAutomata(Automata A, String name) {
         System.out.println(name);
         System.out.println("A = " + A.Q);
