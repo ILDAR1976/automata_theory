@@ -1,8 +1,9 @@
 package org.example;
 
-import java.util.Set;
+import java.util.*;
 
 public class Automata {
+    private List<HashMap<Integer, HashSet<Integer>>> EquivalenceClasses = new ArrayList();
     private Integer[][] Function;
     public Integer[][] getFunction() {
         return Function;
@@ -16,5 +17,8 @@ public class Automata {
     public Set<Integer> F;
     public Integer f(IState method, Integer a, Integer x) {
         return  method.getState(this,a,x);
+    }
+    public List<HashMap<Integer, HashSet<Integer>>> getEquivalenceClasses() {
+        return EquivalenceClasses;
     }
 }

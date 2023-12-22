@@ -14,7 +14,7 @@ public class MA {
     public static void main( String[] args ) {
         Set<Object> R0 = new HashSet<>();
         Automata A = new Automata();
-        AutomatonInitialization(A,R0);
+        automatonInitialization(A,R0);
 
         Set<Object> R = let(R0);
         Set<Object> Fractal = product(R0,A.X);
@@ -55,7 +55,7 @@ public class MA {
         System.out.println(R.toString());
 
     }
-    public static void AutomatonInitialization(Automata A, Set<Object> R0) {
+    public static void automatonInitialization(Automata A, Set<Object> R0) {
 
         Set<Integer> L1 = new HashSet<>();
         Set<Integer> L2 = new HashSet<>();
